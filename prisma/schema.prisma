@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Skema tabel pada database blog
+
+model post {
+  postId    String   @id @default(uuid()) @db.VarChar(50)
+  title     String   @db.VarChar(300)
+  thumbnail String   @db.VarChar(300)
+  writerId  String   @db.VarChar(50)
+  createdAt DateTime @default(now())
+  category  String   @db.VarChar(300)
+  estimate  Int
+  content   String   @db.Text
+}
+
+model user {
+  userId   String @id
+  username String
+  password String @db.VarChar(100)
+  role     Role
+}
+
+enum Role {
+  ADMIN
+  WRITER
+}

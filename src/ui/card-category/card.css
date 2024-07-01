@@ -1,0 +1,13 @@
+.card__btn {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: var(--color-2);
+  color: var(--color-4);
+  font-weight: 700;
+  width: fit-content;
+}
+
+.card__btn:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}

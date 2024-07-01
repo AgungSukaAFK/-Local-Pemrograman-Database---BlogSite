@@ -1,0 +1,127 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-4);
+}
+
+.login__card {
+  width: 100%;
+  height: 100%;
+  color: var(--color-1);
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.login__input-wrapper {
+  width: 80%;
+  height: auto;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+input {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--color-1);
+  outline: none;
+  border: none;
+}
+
+.login__input-group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input[name="password"] {
+  width: 50%;
+
+  flex-grow: 1;
+}
+
+.login__input__password-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.login__input__password-wrapper span {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: var(--color-1);
+}
+
+.login__login-btn {
+  width: 50%;
+  background: var(--color-1);
+  color: var(--color-4);
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.login__login-btn:hover {
+  background-color: var(--color-2);
+}
+
+.login__login-btn:active {
+  filter: brightness(0.75);
+}
+
+.back-button {
+  color: var(--color-1);
+  text-decoration: underline;
+}
+
+.back-button:hover {
+  color: var(--color-2);
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: gray;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .login-container {
+    height: 100vh;
+    width: auto;
+  }
+
+  .login__card {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .login-container {
+    height: 100vh;
+    width: auto;
+  }
+
+  .login__card {
+    height: auto;
+  }
+}

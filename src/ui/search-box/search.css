@@ -1,0 +1,19 @@
+.search-box {
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid var(--color-4);
+  padding: 0.6rem;
+  width: fit-content;
+}
+
+.search-box input,
+.search-box button {
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  color: var(--color-1);
+  background-color: var(--color-4);
+}

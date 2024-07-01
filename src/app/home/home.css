@@ -1,0 +1,33 @@
+.home__page-container {
+  padding: 1rem;
+}
+
+.home__page-container hr {
+  border-color: var(--color-4);
+  margin: 1rem;
+}
+
+.home__cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.home__cards-information {
+  color: var(--color-4);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.back-button {
+  padding: 0.5rem;
+  color: var(--color-4);
+  background-color: var(--color-2);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  filter: brightness(0.8);
+}

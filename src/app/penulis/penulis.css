@@ -1,0 +1,16 @@
+.kategori__page-container {
+  padding: 1rem;
+}
+
+.kategori__cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.kategori__page-container hr {
+  border-color: var(--color-4);
+  margin: 1rem 0;
+}
